@@ -1,10 +1,18 @@
 import React from 'react'
 import ReactDOM from 'react-dom';
+import Detail from './components/Detail'
+import logo from './assets/image/logo.svg'
+import './index.css'
 
-
-const App = () => <div>Hello React</div>
+const App = () => <div>
+                        <header  className="App-header">
+                        <img src={logo} className="App-logo" />
+                        </header >
+                        Hello React
+                        <Detail />
+                    </div>
 
 ReactDOM.render(
-    <App/>,
+    <App />,
     document.getElementById('app')
-  );
+);
